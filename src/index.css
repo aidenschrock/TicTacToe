@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans+Condensed:wght@300&family=Sniglet&display=swap');
+
+/* @font-face {
+  font-family: 'Fabada-regular';
+  src: local('Fabada-regular'), url(./fonts/Fabada-regular.ttf) format('truetype');
+} */
+
+html {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #c7ccdb;
+  color: #e1e5ee;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #f7c59f;
+  border: 3px solid #767b91;
+  float: left;
+  font-family: "Sniglet", cursive;
+  font-size: 72px;
+  font-weight: bold;
+  color: #ececec;
+  line-height: 6rem;
+  height: 6rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #f7c59f;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.game-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #767b91;
+  font-family:'Comfortaa', cursive;;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 13rem;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.game-board {
+  border: 8px solid #767b91;
+  background-color: #767b91;
+  border-radius: 5px;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.game-button {
+  background-color: #767b91;
+  border: 5px solid #767b91;
+  align-content: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  border-radius: 6px;
+  color: #ececec;
+  outline:none;
+  padding-top: 5px;
+}
+
+#restart {
+  width: 7rem;
+  margin-top: 30px;
+  margin-bottom: 7px;
+}
+
+#undo {
+  width: 5rem;
+  font-size: 17px;
+}

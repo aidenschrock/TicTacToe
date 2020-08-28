@@ -1,0 +1,65 @@
+.game {
+    grid-area: game;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #767b91;
+    font-family:'Comfortaa', cursive;;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 13rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  
+  .board {
+    border: 8px solid #767b91;
+    background-color: #767b91;
+    border-radius: 5px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #767b91;
+    border: 5px solid #767b91;
+    align-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #ececec;
+    outline:none;
+    padding-top: 5px;
+  }
+  
+  .restart {
+    composes: button;
+    width: 7rem;
+    margin-top: 30px;
+    margin-bottom: 7px;
+  }
+  
+  .undo {
+    composes: button;
+    width: 5rem;
+    font-size: 17px;
+  }
+  
+  

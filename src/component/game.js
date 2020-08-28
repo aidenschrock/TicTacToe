@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import Board from "./board";
+import styles from "../styles/game.module.css"
+
 class Game extends Component {
     constructor(props) {
       super(props);
@@ -57,18 +59,18 @@ class Game extends Component {
       }
   
       return (
-        <div className="game">
-          <div className="game-status"> {status} </div>{" "}
-          <div className="game-board">
+        <div className={styles.game}>
+          <div className={styles.status}> {status} </div>{" "}
+          <div className={styles.board}>
             <Board
               squares={current.squares}
               winningSquares= {winningLine}
               onClick={(i) => this.handleClick(i)}
             />{" "}
           </div>{" "}
-          <div className="game-controls">
-            <button className="game-button" id="restart" onClick={() => this.jumpTo(0)}> RESTART </button>{" "}
-            <button className="game-button" id="undo" onClick={() => this.jumpTo(previousStep)}> UNDO </button>{" "}
+          <div className={styles.controls}>
+            <button className={styles.restart} onClick={() => this.jumpTo(0)}> RESTART </button>{" "}
+            <button className={styles.undo} onClick={() => this.jumpTo(previousStep)}> UNDO </button>{" "}
           </div>{" "}
         </div>
       );

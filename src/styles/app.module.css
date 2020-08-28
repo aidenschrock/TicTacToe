@@ -1,0 +1,14 @@
+.gridContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;    
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header chat"
+    "game game chat"
+    "footer footer chat";
+}

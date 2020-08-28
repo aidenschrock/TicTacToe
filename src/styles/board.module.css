@@ -1,0 +1,109 @@
+.boardRow:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+    background: #f7c59f;
+    border: 3px solid #767b91;
+    float: left;
+    font-family: "Sniglet", cursive;
+    font-size: 72px;
+    font-weight: bold;
+    color: #ececec;
+    line-height: 6rem;
+    height: 6rem;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 6rem;
+  }
+  
+  .winningX {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+  
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  @-moz-keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .winningO {
+    display: inline-block;
+    Animation:
+      pulse 1s infinite;
+  
+  }
+  
+  @-moz-keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1)
+    }
+    50% {
+      transform: scale(1.5)
+    }
+    100% {
+      transform: scale(1)
+    }
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #f7c59f;
+  }
+  

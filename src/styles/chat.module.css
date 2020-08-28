@@ -1,0 +1,32 @@
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: chat;
+    background-color: yellow;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .header {
+    align-self: flex-start;
+    background-color: tomato;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .messages {
+    align-self: stretch;
+    background-color: turquoise;
+    height: stretch;
+    width: 100%;
+
+  }
+
+  .chatInput {
+    align-self: flex-end;
+    background-color: violet;
+    height: 15%;
+    width: 100%;
+
+  }

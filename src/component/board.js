@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import styles from "../styles/board.module.css";
+
 class Board extends Component {
     renderSquare(i) {
       return (
@@ -13,15 +15,15 @@ class Board extends Component {
     render() {
       return (
         <div>
-          <div className="board-row">
+          <div className={styles.boardRow}>
             {" "}
             {this.renderSquare(0)} {this.renderSquare(1)} {this.renderSquare(2)}{" "}
           </div>{" "}
-          <div className="board-row">
+          <div className={styles.boardRow}>
             {" "}
             {this.renderSquare(3)} {this.renderSquare(4)} {this.renderSquare(5)}{" "}
           </div>{" "}
-          <div className="board-row">
+          <div className={styles.boardRow}>
             {" "}
             {this.renderSquare(6)} {this.renderSquare(7)} {this.renderSquare(8)}{" "}
           </div>{" "}
@@ -32,9 +34,9 @@ class Board extends Component {
 
   function Square(props) {
     return (
-      <button className="square" onClick={props.onClick}>
+      <button className={styles.square} onClick={props.onClick}>
         {" "}
-        <span className={props.isWinner ? (props.value === "X" ? "winning-x" : "winning-o") : null}>{props.value}</span>{" "}
+        <span className={props.isWinner ? (props.value === "X" ? styles.winningX : styles.winningO) : null}>{props.value}</span>{" "}
       </button>
     );
   }

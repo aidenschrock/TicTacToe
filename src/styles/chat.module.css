@@ -2,31 +2,57 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    grid-area: chat;
     background-color: yellow;
     height: 100vh;
     width: 100%;
+    flex: 1 0 25%;
   }
   
   .header {
     align-self: flex-start;
-    background-color: tomato;
+    align-content: center;
+    font: white,30px;
+    text-align: center;
+    position: relative;
+    font-family: 'Comfortaa', cursive;;
+    background-color:#767b91;
     height: 100px;
     width: 100%;
   }
+
+  .header > button {
+    background-color: #363c4c;
+    color:#c7ccdb;
+    border:none;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    right:160px;
+    font-family: 'Comfortaa', cursive;;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+
+  }
+
   
   .messages {
     align-self: stretch;
-    background-color: turquoise;
+    background-color: #363c4c;
     height: stretch;
     width: 100%;
-
+    font-family: "Sniglet", cursive;
+    font: white, 12px;
   }
 
   .chatInput {
     align-self: flex-end;
-    background-color: violet;
+    background-color:#767b91;
     height: 15%;
     width: 100%;
-
+    font-family: "Sniglet", cursive;
+    font: white, 12px;
   }
+
+

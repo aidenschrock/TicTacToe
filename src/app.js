@@ -5,7 +5,8 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import Home from './pages/home'
+import HomePage from './pages/HomePage'
+import GamePage from './pages/GamePage'
 
 function PrivateRoute ({component: Component, authenticated, ...rest}){
     return (
@@ -41,14 +42,15 @@ function PublicRoute ({component: Component, authenticated, ...rest}){
 
 class App extends Component {
     render() {
-    return (
-        <Router>
-            <Switch>
-                <Route exact path="/" component={Home} />
-
-            </Switch>
-        </Router>
-    )
-}}
+        return (
+            <Router>
+                <Switch>
+                    {/* <Route exact path="/" component={HomePage} /> */}
+                    <Route exact path="/" component={GamePage} />
+                </Switch>
+            </Router>
+        )
+    }
+}
 
 export default App;

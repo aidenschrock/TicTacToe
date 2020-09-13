@@ -43,9 +43,10 @@ function PublicRoute ({component: Component, authenticated, ...rest}){
 class App extends Component {
     render() {
         return (
-            <Router>
+            <Router
+                basename="/TicTacToe"
+            >
                 <Switch>
-                    {/* <Route exact path="/" component={HomePage} /> */}
                     <Route exact path="/" component={GamePage} />
                 </Switch>
             </Router>

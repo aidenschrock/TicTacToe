@@ -2,7 +2,7 @@
   "name": "donkeykang",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aidenschrock.github.io",
+  "homepage": "https://aidenschrock.github.io/TicTacToe",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
